@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    
+
+</head>
+<body>
+    
+    <button onclick="chiediforma()">dimmi la forma</button>
+   
+
+  <script>
+  function chiediforma() {
+    let forma=prompt("inserisci la forma");
+    
+
+    if ( forma =="cerchio"){
+
+    let calcola=prompt("inserisci il valore del raggio");
+
+   
+
+    let x = 2;
+    let pigreco= 3.14
+      
+    perimetro= x*pigreco*calcola;
+    area= calcola*calcola*pigreco;
+
+    document.write("l'aria del cerchio è di"+ " "+ area +" "+"il perimetro del cerchio è di"+" "+ perimetro);
+    
+
+  
+    }
+   
+
+    if (forma=="triangolo") {
+
+      let altezza=prompt("inserisci il valore dell'altezza");
+      let base=prompt("inserisci il valore della base");
+
+        
+
+        let somma=altezza*base;
+        let risultato= somma/2;
+
+        document.write("l'area del triangolo è " +""+risultato);
+
+
+
+
+
+      
+    }
+
+
+     if (forma=="quadrato") {
+
+      let lato=prompt("inserisci la lunghezza del lato");
+      
+
+        
+
+        let perimetro=lato*4;
+        let area= lato*lato;
+
+        document.write("l'area  del quadrato è di " +" "+area+","+"il perimetro del quadrato è di"+" "+ perimetro);
+  
+  }
+
+  else
+  document.write("inserisci solo una forma tra: traingolo,cerchio e quadrato");
+  
+
+}      
+
+   
+    
+  
+   
+  
+  
+  
+  
+  
+  
+  
+ 
+
+     
+
+     
+    
+  </script>
+
+
+</body>
+</html>
