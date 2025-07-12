@@ -1,1 +1,34 @@
 # Esercizio-javascript
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="number" name="" id="numero1">
+    <input type="number" name="" id="numero2">
+    <input type="number" name="" id="numero3">
+    <input type="number" name="" id="numero4">
+
+    <button id="attiva" onclick=media()>fai la media</button>
+    <p id="sommiamo"></p>
+
+
+    <script>
+        function media(){
+         var a=Number(document.getElementById("numero1").value);
+         var b=Number(document.getElementById("numero2").value);
+         var c=Number(document.getElementById("numero3").value);
+         var d=Number(document.getElementById("numero4").value);
+
+         var somma= a+b+c+d;
+         var media=somma/4;
+          document.getElementById("sommiamo").innerHTML=media
+        }
+        
+    </script>
+    
+</body>
+</html>
